@@ -726,7 +726,7 @@ export const SearchContextProvider: (
 // @public
 export type SearchContextProviderProps = PropsWithChildren<{
   initialState?: SearchContextState;
-  useParentContext?: boolean;
+  parentContext?: boolean;
 }>;
 
 // @public (undocumented)

@@ -164,7 +164,7 @@ export type SearchBarProps = Partial<SearchBarBaseProps>;
 
 const withContext = (Component: ComponentType<SearchBarProps>) => {
   return forwardRef<unknown, SearchBarProps>((props, ref) => (
-    <SearchContextProvider useParentContext>
+    <SearchContextProvider parentContext>
       <Component {...props} ref={ref} />
     </SearchContextProvider>
   ));

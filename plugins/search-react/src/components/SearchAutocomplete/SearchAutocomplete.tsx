@@ -70,7 +70,7 @@ const withContext = (
   >(
     props: SearchAutocompleteProps<T, Multiple, DisableClearable, FreeSolo>,
   ) => (
-    <SearchContextProvider useParentContext>
+    <SearchContextProvider parentContext>
       <Component {...props} />
     </SearchContextProvider>
   );
@@ -177,7 +177,7 @@ export type SearchAutocompleteDefaultOptionProps = {
 };
 
 /**
- * A default search bar autocomplete component.
+ * A default search autocomplete option component.
  *
  * @public
  */
